@@ -1,0 +1,581 @@
+/* ==========================================================
+   ESTILOS SENCILLOS Y LIMPIOS - TEMA CLARO EL SALVADOR
+   Universidad de El Salvador - Teoría de Sistemas
+   ========================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: #f8f9fa;
+  background-image: 
+    radial-gradient(circle at 10% 10%, rgba(218, 41, 28, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 90% 85%, rgba(218, 41, 28, 0.07) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(218, 41, 28, 0.03) 0%, transparent 60%);
+  background-attachment: fixed;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+/* ==========================================================
+   BARRA DE NAVEGACIÓN MODERNA Y ESTILIZADA
+   ========================================================== */
+.barra-superior {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #da291c;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.nav-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0.6rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.img-logo-claro {
+  height: 32px;
+  width: auto;
+  max-width: 125px;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(218, 41, 28, 0.18));
+  transition: transform 0.2s ease;
+}
+
+.img-logo-claro:hover {
+  transform: scale(1.03);
+}
+
+.logo-divisor {
+  width: 1.5px;
+  height: 28px;
+  background: #e2e8f0;
+  margin: 0 2px;
+}
+
+.logo-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-titulo {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1f2937;
+  letter-spacing: -0.2px;
+}
+
+.logo-sub {
+  font-size: 0.74rem;
+  color: #6b7280;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+/* Menú Estilo Cápsula (Pill Menu) */
+.navegacion {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #f3f4f6;
+  padding: 4px 6px;
+  border-radius: 30px;
+  border: 1px solid #e5e7eb;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 13px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.22s ease;
+}
+
+.nav-icono {
+  font-size: 0.9rem;
+}
+
+.nav-link:hover {
+  color: #da291c;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+}
+
+.nav-link.activo {
+  background: #da291c;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(218, 41, 28, 0.3);
+}
+
+/* Contenedor Principal */
+.contenedor {
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+/* Tarjetas */
+.tarjeta {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 22px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+/* Portada / Datos UES con Identidad Claro */
+.portada-ues {
+  border-left: 5px solid #da291c;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.portada-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.portada-textos {
+  flex: 1;
+}
+
+.tag-universidad {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: #da291c;
+  background: #ffebeb;
+  padding: 3px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.portada-ues h1 {
+  font-size: 1.55rem;
+  color: #da291c;
+  margin-bottom: 5px;
+  line-height: 1.25;
+}
+
+.portada-ues h2 {
+  font-size: 1.05rem;
+  color: #4b5563;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.portada-sub {
+  font-size: 0.92rem;
+  color: #6b7280;
+}
+
+.portada-logo-caja {
+  width: 145px;
+  height: 68px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #fee2e2;
+  box-shadow: 0 4px 16px rgba(218, 41, 28, 0.08);
+  padding: 8px 14px;
+}
+
+.portada-logo-img {
+  width: 100%;
+  height: auto;
+  max-height: 48px;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.portada-logo-img:hover {
+  transform: scale(1.05);
+}
+
+.datos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+.datos-grid strong {
+  color: #222;
+}
+
+.col-estudiantes strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.lista-estudiantes {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-estudiantes li {
+  margin-bottom: 4px;
+  font-size: 0.88rem;
+  color: #2d3748;
+}
+
+.lista-estudiantes span {
+  color: #da291c;
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+/* Títulos de sección */
+.titulo-seccion {
+  font-size: 1.25rem;
+  color: #111;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 8px;
+}
+
+.titulo-seccion span {
+  color: #da291c;
+}
+
+/* Sección Organización */
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.caja-info {
+  background-color: #fafafa;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.caja-info h3 {
+  font-size: 1rem;
+  color: #da291c;
+  margin-bottom: 6px;
+}
+
+.caja-info ul {
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.caja-info ul li {
+  margin-bottom: 4px;
+}
+
+/* Sección Diagrama */
+.diagrama-contenedor {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.diagrama-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.diagrama-img:hover {
+  transform: scale(1.01);
+}
+
+.btn-accion {
+  display: inline-block;
+  background-color: #da291c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+  text-decoration: none;
+}
+
+.btn-accion:hover {
+  background-color: #b81f14;
+}
+
+/* Pestañas (Tabs) con JavaScript */
+.pestanas-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.btn-tab {
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  transition: all 0.2s;
+}
+
+.btn-tab:hover {
+  background: #e5e5e5;
+}
+
+.btn-tab.activo {
+  background: #da291c;
+  color: white;
+  border-color: #da291c;
+}
+
+.tab-contenido {
+  display: none;
+  background: #fafafa;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 16px;
+  animation: aparecer 0.25s ease;
+}
+
+.tab-contenido.activo {
+  display: block;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-contenido h3 {
+  color: #da291c;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.lista-componentes {
+  list-style: none;
+}
+
+.lista-componentes li {
+  padding: 6px 0;
+  border-bottom: 1px dashed #eee;
+  font-size: 0.92rem;
+}
+
+.lista-componentes li:last-child {
+  border-bottom: none;
+}
+
+.lista-componentes strong {
+  color: #222;
+}
+
+/* Simulador / Ejemplo de Flujo Interactivo */
+.simulador-caja {
+  background: #fff8f8;
+  border: 1px solid #f2d2d2;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.flujo-pasos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.paso-item {
+  background: white;
+  border: 1px solid #eee;
+  padding: 10px 14px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.paso-item.resaltado {
+  border-color: #da291c;
+  background-color: #ffebeb;
+  font-weight: bold;
+}
+
+.paso-num {
+  background: #da291c;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Conclusiones */
+.conclusiones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.conclusion-card {
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  border-left: 3px solid #da291c;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+}
+
+/* Modal para ampliar la imagen */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal.activo {
+  display: flex;
+}
+
+.modal-contenido {
+  max-width: 95%;
+  max-height: 90vh;
+  border-radius: 8px;
+  background: white;
+  padding: 5px;
+}
+
+.modal-cerrar {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 20px 15px;
+  background: #ffffff;
+  border-top: 1px solid #e5e5e5;
+  color: #777;
+  font-size: 0.85rem;
+  margin-top: 30px;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    gap: 10px;
+  }
+  .navegacion {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 5px;
+    border-radius: 18px;
+  }
+  .nav-link {
+    font-size: 0.8rem;
+    padding: 5px 9px;
+  }
+  .portada-header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .portada-logo-caja {
+    margin: 0 auto 10px;
+    width: 125px;
+    height: 56px;
+  }
+  .portada-ues h1 {
+    font-size: 1.25rem;
+  }
+}

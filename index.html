@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claro El Salvador como Sistema Abierto | TSI115 UES</title>
+  <link rel="icon" type="image/png" href="logo-claro.png">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Barra de navegación moderna con logo oficial de Claro -->
+  <header class="barra-superior">
+    <div class="nav-container">
+      <div class="logo-area">
+        <a href="#inicio" class="logo-link" title="Claro El Salvador">
+          <img src="logo-claro.png" alt="Logo Claro El Salvador" class="img-logo-claro">
+        </a>
+        <div class="logo-divisor"></div>
+        <div class="logo-info">
+          <span class="logo-titulo">Teoría de Sistemas</span>
+          <span class="logo-sub">UES • TSI115</span>
+        </div>
+      </div>
+      <nav class="navegacion">
+        <a href="#inicio" class="nav-link activo"><span class="nav-icono">🏠</span> Inicio</a>
+        <a href="#empresa" class="nav-link"><span class="nav-icono">🏢</span> La Empresa</a>
+        <a href="#diagrama" class="nav-link"><span class="nav-icono">📊</span> Diagrama</a>
+        <a href="#componentes" class="nav-link"><span class="nav-icono">⚙️</span> Componentes</a>
+        <a href="#ejemplo" class="nav-link"><span class="nav-icono">💡</span> Flujo</a>
+        <a href="#conclusiones" class="nav-link"><span class="nav-icono">📝</span> Conclusiones</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+
+    <!-- Tarjeta de Portada / Datos Universitarios con Identidad Claro -->
+    <section class="tarjeta portada-ues" id="inicio">
+      <div class="portada-header">
+        <div class="portada-textos">
+          <span class="tag-universidad">🏛️ UNIVERSIDAD DE EL SALVADOR</span>
+          <h1>Claro El Salvador como Sistema Abierto</h1>
+          <h2>Facultad de Ingeniería y Arquitectura • Escuela de Ingeniería en Sistemas</h2>
+          <p class="portada-sub"><strong>Actividad de Discusión 2:</strong> La Organización como Sistema Abierto (Caso Claro El Salvador)</p>
+        </div>
+        <div class="portada-logo-caja">
+          <img src="logo-claro.png" alt="Logo Claro" class="portada-logo-img">
+        </div>
+      </div>
+      
+      <div class="datos-grid">
+        <div class="col-estudiantes">
+          <strong>Estudiantes:</strong>
+          <ul class="lista-estudiantes">
+            <li>Billy Samuel Martinez Cesper <span>(MC19049)</span></li>
+            <li>Angelo Jeremias Barrientos Serrano <span>(BS26003)</span></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Grupo Teórico:</strong> 22<br>
+          <strong>Grupo de Trabajo:</strong> 01
+        </div>
+        <div>
+          <strong>Asignatura:</strong> TSI115<br>
+          <strong>Fecha de entrega:</strong> 11/10/2026
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. La Empresa y el Enfoque de Sistema Abierto -->
+    <section class="tarjeta" id="empresa">
+      <h2 class="titulo-seccion"><span>🏢</span> 1. Claro El Salvador y el Sistema Abierto</h2>
+      <p>
+        <strong>Claro El Salvador</strong> es una subsidiaria de América Móvil que brinda servicios de telecomunicaciones a nivel nacional. 
+        En la Teoría de Sistemas, se clasifica como un <strong>sistema abierto</strong> porque necesita interactuar de forma continua con su entorno 
+        para mantenerse con vida y no caer en la entropía (quiebra o desactualización).
+      </p>
+
+      <div class="intro-grid">
+        <div class="caja-info">
+          <h3>Servicios Principales</h3>
+          <ul>
+            <li>Telefonía fija y móvil (prepago y postpago).</li>
+            <li>Internet de banda ancha y fibra óptica.</li>
+            <li>Claro TV (cable digital y satelital).</li>
+            <li>Servicios en la nube y soluciones para empresas.</li>
+          </ul>
+        </div>
+        <div class="caja-info">
+          <h3>¿Por qué es un Sistema Abierto?</h3>
+          <ul>
+            <li><strong>Importa recursos:</strong> cables, antenas, electricidad, dinero y empleados.</li>
+            <li><strong>Transforma:</strong> convierte la tecnología y datos en conectividad.</li>
+            <li><strong>Exporta salidas:</strong> servicios de llamadas, datos y facturas.</li>
+            <li><strong>Se autorregula:</strong> mediante reportes de fallas y quejas ante SIGET.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Diagrama del Sistema Abierto -->
+    <section class="tarjeta" id="diagrama">
+      <h2 class="titulo-seccion"><span>📊</span> 2. Diagrama del Sistema Abierto</h2>
+      <p>
+        Este diagrama muestra los límites de Claro El Salvador, su intercambio con el entorno externo y el ciclo continuo de retroalimentación.
+      </p>
+
+      <div class="diagrama-contenedor">
+        <img src="diagrama.jpg" alt="Diagrama del Sistema Abierto Claro El Salvador" class="diagrama-img" id="imgDiagrama" title="Haz clic para ampliar" onclick="abrirModal()">
+        <br>
+        <button class="btn-accion" id="btnAmpliar" onclick="abrirModal()">🔍 Ver imagen en grande</button>
+      </div>
+    </section>
+
+    <!-- 3. Componentes del Sistema (Pestañas con JavaScript) -->
+    <section class="tarjeta" id="componentes">
+      <h2 class="titulo-seccion"><span>⚙️</span> 3. Componentes del Sistema de Claro</h2>
+      <p style="margin-bottom: 15px;">
+        Selecciona cada botón para ver el detalle de cada parte del sistema:
+      </p>
+
+      <div class="pestanas-header">
+        <button class="btn-tab activo" data-tab="tab-entorno" onclick="cambiarPestana('tab-entorno', this)">🌍 Entorno Externo</button>
+        <button class="btn-tab" data-tab="tab-entradas" onclick="cambiarPestana('tab-entradas', this)">📥 Entradas</button>
+        <button class="btn-tab" data-tab="tab-procesos" onclick="cambiarPestana('tab-procesos', this)">⚙️ Procesos</button>
+        <button class="btn-tab" data-tab="tab-salidas" onclick="cambiarPestana('tab-salidas', this)">📤 Salidas</button>
+        <button class="btn-tab" data-tab="tab-feedback" onclick="cambiarPestana('tab-feedback', this)">🔄 Retroalimentación</button>
+      </div>
+
+      <!-- Contenido Tab: Entorno -->
+      <div class="tab-contenido activo" id="tab-entorno">
+        <h3>🌍 Factores del Entorno Externo</h3>
+        <ul class="lista-componentes">
+          <li><strong>Clientes:</strong> Familias salvadoreñas, pequeñas empresas y gobierno que necesitan comunicación diaria.</li>
+          <li><strong>Competencia:</strong> Operadores rivales como Tigo, Movistar y Digicel que presionan con ofertas y planes.</li>
+          <li><strong>Estado y Reguladores:</strong> La SIGET (normas técnicas y calidad) y la Defensoría del Consumidor (derechos del usuario).</li>
+          <li><strong>Proveedores:</strong> Empresas globales como Huawei, Cisco y Nokia para equipos, y distribuidoras de energía eléctrica.</li>
+        </ul>
+      </div>
+
+      <!-- Contenido Tab: Entradas -->
+      <div class="tab-contenido" id="tab-entradas">
+        <h3>📥 Entradas (Inputs)</h3>
+        <ul class="lista-componentes">
+          <li><strong>Recursos Físicos:</strong> Cables de fibra óptica, antenas repetidoras, routers, energía eléctrica y capital de inversión.</li>
+          <li><strong>Personas:</strong> Ingenieros en sistemas y telecomunicaciones, técnicos de instalación, ejecutivos de agencias y administradores.</li>
+          <li><strong>Información:</strong> Solicitudes de nuevos contratos, datos de facturación de clientes, peticiones de portabilidad y quejas.</li>
+        </ul>
+      </div>
+
+      <!-- Contenido Tab: Procesos -->
+      <div class="tab-contenido" id="tab-procesos">
+        <h3>⚙️ Procesos de Transformación</h3>
+        <ul class="lista-componentes">
+          <li><strong>Infraestructura:</strong> Mantenimiento e instalación de cableado, fibra óptica y torres en los 14 departamentos.</li>
+          <li><strong>Servicios de Red:</strong> Enrutamiento de datos de internet y conmutación de llamadas en tiempo real.</li>
+          <li><strong>Soporte al Cliente:</strong> Call center de ayuda técnica y atención presencial en agencias.</li>
+          <li><strong>Gestión y Cobro:</strong> Facturación electrónica, cobros, mercadeo y planificación de cobertura.</li>
+        </ul>
+      </div>
+
+      <!-- Contenido Tab: Salidas -->
+      <div class="tab-contenido" id="tab-salidas">
+        <h3>📤 Salidas (Outputs)</h3>
+        <ul class="lista-componentes">
+          <li><strong>Servicios:</strong> Internet residencial y móvil funcional, telefonía fija y móvil, televisión Claro TV.</li>
+          <li><strong>Información:</strong> Facturas mensuales enviadas a usuarios, estados de cuenta y reportes de calidad para la SIGET.</li>
+          <li><strong>Resultados:</strong> Millones de personas comunicadas, comercios operando en línea e innovación tecnológica en el país.</li>
+        </ul>
+      </div>
+
+      <!-- Contenido Tab: Feedback -->
+      <div class="tab-contenido" id="tab-feedback">
+        <h3>🔄 Retroalimentación (Feedback)</h3>
+        <ul class="lista-componentes">
+          <li><strong>Monitoreo en tiempo real:</strong> Sensores del centro de operaciones (NOC) que detectan caídas de enlace antes que el cliente.</li>
+          <li><strong>Reportes de usuarios:</strong> Llamadas de clientes cuando se corta el servicio para enviar cuadrillas técnicas.</li>
+          <li><strong>Encuestas de satisfacción:</strong> Encuestas NPS enviadas por SMS tras una visita de soporte.</li>
+          <li><strong>Ajustes por la SIGET y competencia:</strong> Adaptar precios y mejorar cobertura cuando hay reclamos o promociones de Tigo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. Pequeña Demostración Interactiva con JavaScript -->
+    <section class="tarjeta" id="ejemplo">
+      <h2 class="titulo-seccion"><span>💡</span> 4. Ejemplo Interactivo: ¿Cómo funciona el ciclo del sistema?</h2>
+      <p>
+        Haz clic en el botón para simular cómo viaja un reporte de falla por todo el sistema abierto de Claro:
+      </p>
+
+      <div class="simulador-caja">
+        <button class="btn-accion" id="btnIniciarSimulacion" onclick="iniciarSimulacion()">▶ Simular Reporte de Falla</button>
+        <span id="mensajeEstado" style="margin-left: 10px; font-weight: 600; color: #da291c;"></span>
+
+        <div class="flujo-pasos">
+          <div class="paso-item" id="paso1">
+            <span class="paso-num">1</span>
+            <span><strong>Entorno y Entrada:</strong> El cliente reporta que se cayó el internet en su colonia (Llamada al 2250-5555).</span>
+          </div>
+          <div class="paso-item" id="paso2">
+            <span class="paso-num">2</span>
+            <span><strong>Proceso Interno:</strong> El sistema crea un ticket de soporte y envía una cuadrilla de técnicos a revisar la fibra óptica.</span>
+          </div>
+          <div class="paso-item" id="paso3">
+            <span class="paso-num">3</span>
+            <span><strong>Salida:</strong> El cable dañado se repara y se restablece la conexión a internet del usuario.</span>
+          </div>
+          <div class="paso-item" id="paso4">
+            <span class="paso-num">4</span>
+            <span><strong>Retroalimentación:</strong> Claro envía un mensaje SMS preguntando si el servicio quedó bien calificado (Homeostasis).</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Conclusiones Rápidas -->
+    <section class="tarjeta" id="conclusiones">
+      <h2 class="titulo-seccion"><span>📝</span> 5. Conclusiones del Trabajo</h2>
+      
+      <div class="conclusiones-grid">
+        <div class="conclusion-card">
+          <strong>1. Interdependencia</strong><br>
+          Claro depende de la importación continua de energía, repuestos y clientes del entorno; si se aislara, desaparecería.
+        </div>
+        <div class="conclusion-card">
+          <strong>2. La retroalimentación es vital</strong><br>
+          Sin las llamadas de soporte y el monitoreo de red, la empresa no sabría dónde reparar fallas ni cómo mejorar sus servicios.
+        </div>
+        <div class="conclusion-card">
+          <strong>3. Adaptación al entorno</strong><br>
+          Factores externos como la competencia (Tigo, Movistar) y las normas de la SIGET obligan a Claro a evolucionar sus precios y tecnología.
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal para ver el diagrama en pantalla grande -->
+  <div class="modal" id="modalImg" onclick="if(event.target === this) cerrarModal()">
+    <button class="modal-cerrar" id="btnCerrarModal" onclick="cerrarModal()">&times;</button>
+    <img src="diagrama.jpg" alt="Diagrama en grande" class="modal-contenido">
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <div style="margin-bottom: 10px;">
+      <img src="logo-claro.png" alt="Claro" style="height: 28px; width: auto; opacity: 0.9;">
+    </div>
+    <p><strong>Universidad de El Salvador (UES)</strong> • Escuela de Ingeniería en Sistemas</p>
+    <p>Teoría de Sistemas (TSI115) • Grupo Teórico 22 • Grupo de Trabajo 01</p>
+    <p style="margin-top: 5px; color: #555;">Billy Samuel Martinez Cesper (MC19049) &nbsp;|&nbsp; Angelo Jeremias Barrientos Serrano (BS26003)</p>
+  </footer>
+
+  <!-- Script JS integrado para funcionamiento 100% garantizado -->
+  <script>
+    // 1. CAMBIO DE PESTAÑAS (TABS)
+    function cambiarPestana(idTab, boton) {
+      var botones = document.querySelectorAll('.btn-tab');
+      var contenidos = document.querySelectorAll('.tab-contenido');
+      botones.forEach(function(b) { b.classList.remove('activo'); });
+      contenidos.forEach(function(c) { c.classList.remove('activo'); });
+
+      if (boton) {
+        boton.classList.add('activo');
+      } else {
+        var bActivo = document.querySelector('.btn-tab[data-tab="' + idTab + '"]');
+        if (bActivo) bActivo.classList.add('activo');
+      }
+
+      var objetivo = document.getElementById(idTab);
+      if (objetivo) objetivo.classList.add('activo');
+    }
+
+    // 2. MODAL DE IMAGEN
+    function abrirModal() {
+      var modal = document.getElementById('modalImg');
+      if (modal) modal.classList.add('activo');
+    }
+
+    function cerrarModal() {
+      var modal = document.getElementById('modalImg');
+      if (modal) modal.classList.remove('activo');
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') cerrarModal();
+    });
+
+    // 3. SIMULADOR DE FLUJO PASO A PASO
+    var simulando = false;
+    function iniciarSimulacion() {
+      if (simulando) return;
+      simulando = true;
+
+      var btn = document.getElementById('btnIniciarSimulacion');
+      var mensaje = document.getElementById('mensajeEstado');
+      var pasos = [
+        document.getElementById('paso1'),
+        document.getElementById('paso2'),
+        document.getElementById('paso3'),
+        document.getElementById('paso4')
+      ];
+
+      if (btn) btn.disabled = true;
+      pasos.forEach(function(p) { if (p) p.classList.remove('resaltado'); });
+
+      var textos = [
+        "Llamada entrante al Call Center...",
+        "Cuadrilla técnica despachada...",
+        "Conectividad restablecida en la zona...",
+        "¡Encuesta enviada y sistema en equilibrio!"
+      ];
+
+      pasos.forEach(function(paso, idx) {
+        setTimeout(function() {
+          pasos.forEach(function(p) { if (p) p.classList.remove('resaltado'); });
+          if (paso) paso.classList.add('resaltado');
+          if (mensaje) mensaje.textContent = textos[idx];
+
+          if (idx === pasos.length - 1) {
+            setTimeout(function() {
+              if (mensaje) mensaje.textContent = "✔ Ciclo completado con éxito";
+              if (btn) btn.disabled = false;
+              simulando = false;
+            }, 1200);
+          }
+        }, idx * 900);
+      });
+    }
+
+    // 4. SCROLL SPY Y ENLACES ACTIVOS
+    document.addEventListener('DOMContentLoaded', function() {
+      var navLinks = document.querySelectorAll('.nav-link');
+      var secciones = document.querySelectorAll('main section[id]');
+
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          navLinks.forEach(function(l) { l.classList.remove('activo'); });
+          this.classList.add('activo');
+        });
+      });
+
+      window.addEventListener('scroll', function() {
+        var scrollPos = window.scrollY + 120;
+        secciones.forEach(function(sec) {
+          var top = sec.offsetTop;
+          var height = sec.offsetHeight;
+          var id = sec.getAttribute('id');
+          if (scrollPos >= top && scrollPos < top + height) {
+            navLinks.forEach(function(link) {
+              link.classList.remove('activo');
+              if (link.getAttribute('href') === '#' + id) {
+                link.classList.add('activo');
+              }
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
